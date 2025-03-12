@@ -19,7 +19,6 @@ public class HelloApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        HelloWorld helloWorld = helloWorldService.getHelloWorld();
-        System.out.println(helloWorld);
+        System.out.println(helloWorldService.getHelloWorld());
     }
 }
