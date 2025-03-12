@@ -21,7 +21,7 @@ public class LivreService {
         System.out.println("Le livre ajouté est : " + livre);
     }
 
-    public Livre getLivre(){
-        return new Livre("titre", "description", "datePublication");
+    public Livre getLivre(Livre livre){
+        return livre;
     }
 }
