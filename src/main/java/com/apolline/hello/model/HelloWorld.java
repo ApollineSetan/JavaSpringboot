@@ -1,7 +1,12 @@
 package com.apolline.hello.model;
 
+import com.apolline.hello.service.LivreService;
+
 public class HelloWorld {
+
     private String value;
+    private LivreService livreService;
+
     private String getValue() {
         return value;
     }
@@ -12,8 +17,6 @@ public class HelloWorld {
 
     @Override
     public String toString() {
-        return "HelloWorld{" +
-                "value='" + value + '\'' +
-                '}';
+        return "'" + value + "'";
     }
 }
