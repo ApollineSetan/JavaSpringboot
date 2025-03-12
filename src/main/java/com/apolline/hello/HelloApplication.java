@@ -1,5 +1,6 @@
 package com.apolline.hello;
 
+import com.apolline.hello.controller.LivreController;
 import com.apolline.hello.service.HelloWorldService;
 import com.apolline.hello.service.LivreService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,10 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class HelloApplication implements CommandLineRunner {
 
     @Autowired
-    HelloWorldService helloWorldService;
-
-    @Autowired
-    LivreService livreService;
+    private LivreController livreController;
 
     public static void main(String[] args) {
         SpringApplication.run(HelloApplication.class, args);
@@ -22,7 +20,6 @@ public class HelloApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        System.out.println(helloWorldService.getHelloWorld());
-        livreService.add();
+        livreController.router();
     }
 }
