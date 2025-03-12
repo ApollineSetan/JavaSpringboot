@@ -1,8 +1,6 @@
 package com.apolline.hello;
 
 import com.apolline.hello.controller.LivreController;
-import com.apolline.hello.service.HelloWorldService;
-import com.apolline.hello.service.LivreService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
